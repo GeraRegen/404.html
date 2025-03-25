@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Депрессия</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .tyo {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Bahnschrift SemiBold SemiCondensed', Arial, sans-serif;
+            color: #3a3b38;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container pre {
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            white-space: pre-wrap;
+            margin: 0;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .iot {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Bahnschrift SemiBold SemiCondensed', Arial, sans-serif;
+            color: #e9fa34;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            text-align: left;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .info-container {
+            background-image: url('page3_gradient.jpg'); /* Замените на путь к вашей картинке */
+            background-size: cover; /* Растягиваем изображение на весь блок */
+            background-position: center; /* Центрируем изображение */
+            border-radius: 15px; /* Закругленные углы */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            position: relative;
+            color: #333; /* Цвет текста для контраста */
+        }
+        .info-container h2 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            font-family: 'Bahnschrift SemiBold SemiCondensed', Arial, sans-serif;
+            color: #333;
+        }
+        .info-container p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #e0f7ff;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .cinter {
+            display: flex;
+            flex-direction: column;
+            background-color: green;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 800px;
+            color: white;
+        }
+        .cinter h2 {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Bahnschrift SemiBold SemiCondensed', Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+        .cinter p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .cloud-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .cloud-left, .cloud-right {
+            width: 45%;
+            background-image: url('phone_gradient.jpg');
+            background-size: cover;
+            border-radius: 20px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: justify;
+        }
+        .cloud-glava {
+            width: 100%;
+            background-image: url('oblako.jpg');
+            background-size: cover;
+            border-radius: 0 0 20px 20px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .info-container_1 {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-image: url('depresion.jpg');
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #4565b5;
+        }
+        .info-container_1 h2 {
+            color: #2b4ea6;
+            margin-top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cloud-glava">
+            <h1>Психологическая помощь ВЫХОД ЕСТЬ!</h1>
+            <img src="page_psih2.png" alt="Логотип компании">
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Главное</a> <a href="templates/reg_and_login.html">Услуги</a>
+    </nav>
+    <div class="cloud-container">
+        <div class="cloud-left">
+            <div class="tyo">Депрессия</div>
+            <div class="iot">
+                <pre>
+                    Депрессия – часто встречающееся
+                    и серьезное расстройство,
+                    которое негативно влияет
+                    на самочувствие человека,
+                    образ его мыслей и действия.
+                    Депрессия сопровождается
+                    подавленным настроением,
+                    грустью, потерей интереса к занятиям,
+                    которыми когда-то наслаждались.
+                    Это может привести к
+                    различным эмоциональным
+                    и физическим проблемам;
+                    может снизить способность работать,
+                    общаться,
+                    выполнять повседневные дела.
+                </pre>
+            </div>
+        </div>
+        <div class="cloud-right">
+            <div class="tyo">Из-за чего развивается депрессия/тревожность?</div>
+            <div class="iot">
+                <ul>
+                    <li><strong>Нейрохимия:</strong> нарушение обмена определенных химических веществ в головном мозге может способствовать развитию депрессии и тревоги.</li>
+                    <li><strong>Генетика:</strong> риск развития депрессии и тревоги может передаваться по наследству.</li>
+                    <li><strong>Личность:</strong> люди с низкой самооценкой, легко поддающиеся стрессу или в целом пессимистичные, более склонны к развитию депрессии и тревоги.</li>
+                    <li><strong>Факторы окружающей среды:</strong> хронический стресс, присутствие насилия, пренебрежения, жестокого обращения в детстве, бедности может сделать некоторых людей более уязвимыми к депрессии и тревоге.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Антидепрессанты</h1>
+    </header>
+    <div class="info-container_1">
+    <h2>О механизме действия антидепрессантов</h2>
+        <p>При тревоге и депрессии нарушается баланс определенных веществ в головном мозге – нейромедиаторов (серотонина, норадреналина, дофамина). Они отвечают за настроение и поведение. Антидепрессанты могут нормализовать уровень этих нейромедиаторов и устранить химический дисбаланс, связанный с тревогой или депрессией.</p>
+        <p>Следует знать, что антидепрессанты действуют не сразу, эффект разворачивается постепенно. Антидепрессанты могут дать некоторое улучшение уже в течение первых двух недель применения, но полного эффекта можно ожидать несколько месяцев. Если пациент чувствует лишь незначительное улучшение или его отсутствие, то врач может изменить дозу лекарства или заменить другим антидепрессантом. В некоторых ситуациях может помочь добавление других лекарственных средств. Важно, чтобы Ваш врач знал, если лекарство не работает, или если вы испытываете неприятные эффекты от его приема.</p>
+    </div>
+    <div class="info-container_1">
+    <h2>Можно ли пожилым пациентам с хроническими заболеваниями принимать антидепрессанты?</h2>
+        <p>Можно ли пожилым пациентам с хроническими заболеваниями принимать антидепрессанты? При назначении антидепрессантов безусловно учитывается наличие сопутствующих заболеваний; также важно знать, какие еще лекарства принимает человек. Возможность применения антидепрессантов при хронических заболеваниях широко изучена. При многих болезнях сердечно-сосудистой, нервной системы назначение антидепрессантов улучшает эффективность лечения этих заболеваний.</p>
+        <p> Например, у пациентов, перенесших инфаркт миокарда, назначение антидепрессантов снижает риск повторного инфаркта. Большинство антидепрессантов не влияют на функцию печени, чего часто опасаются пациенты. Иногда при хронических заболеваниях необходима корректировка дозы антидепрессанта." вниз от круга идет стрелочка на контейнер с текстом "У антидепрессантов много побочных эффектов?</p>
+    </div>
+    <div class="info-container_1">
+    <h2>У антидепрессантов много побочных эффектов?</h2>
+        <p>Абсолютно все лекарственные средства могут вызывать побочные эффекты. У современных антидепрессантов они хорошо известны и, к счастью, являются нетяжелыми и часто проходят самостоятельно. Чаще всего это побочные эффекты, возникающие в первую неделю приема антидепрессантов, связанные с повышением уровня серотонина (тошнота, головная боль, головокружение) и проходящие самостоятельно по мере адаптации организма.</p>
+        <p> Если у Вас есть вопросы по поводу возможных побочных эффектов, не стесняйтесь обратиться за разъяснением к врачу.</p>
+    </div>
+
+    <footer>
+        <img src="page_psih2.jpg" alt="фото">
+        <pre>
+            ООО «Медико-диагностический центр «Выход Есть!» - это многопрофильное лечебно-профилактическое учреждение, которое имеет современную материально-техническую базу,
+            оказывает платные медицинские услуги и осуществляет консультации высококвалифицированных специалистов.
+        </pre>
+        <pre>
+        Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой,
+            определяемой положениями ст. 405 Гражданского кодекса Республики Беларусь.
+            Для получения подробной информации о наличии и стоимости указанных услуг, пожалуйста, обращайтесь к администраторам клиники.
+        </pre>
+    </footer>
+</body>
+</html>
