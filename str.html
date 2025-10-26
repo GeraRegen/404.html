@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Тутейшыя</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-section">
+            <div class="question-section">
+                <h2 class="question-text" id="question">якая вобласць?</h2>
+            </div>
+            <div class="images-container">
+                <img src="" class="quiz-image" id="image1" alt="Фото 1">
+                <img src="" class="quiz-image" id="image2" alt="Фото 2">
+            </div>
+            <div class="buttons-container">
+                <button class="quiz-button" data-correct="false">Варыянт 1</button>
+                <button class="quiz-button" data-correct="true">Варыянт 2</button>
+                <button class="quiz-button" data-correct="false">Варыянт 3</button>
+                <button class="quiz-button" data-correct="false">Варыянт 4</button>
+</div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+        <div class="result-section" id="result-section">
+            <h2 class='result-title'>Малайчына!</h2>
+            <p>Ты перамог!</p>
+            <button class="restart-button" onclick="restartQuiz()">ГУРААААЛЬ ЯШЧЭ</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
