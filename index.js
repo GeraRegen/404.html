@@ -11,7 +11,7 @@ const quizData = [
     {
         question:"че за рыло?",
         images:[
-            "Гураль.jpg",
+            "гураль.jpg",
             "https://via.placeholder.com/200x150/2196F3/white?text=Фото+2"
         ],
         options: ["Гурка","ЗАХАРАУ","Фьюрер, Генералиссимус Приходько", "просто саня"],
@@ -112,5 +112,6 @@ function restartQuiz() {
 buttons.forEach(button => {
     button.addEventListener('click', () => checkAnswer(button));
 });
+
 
 loadQuestion();
